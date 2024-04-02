@@ -25,11 +25,28 @@ public class CreateBinaryTree {
         root = insertRecursive(root, value);
     }
 
-    public void display(Node node) {
+    public void displayInorder(Node node) {
         if (node != null) {
-            display(node.left);
+            displayInorder(node.left);
             System.out.println(" " + node.value);
-            display(node.right);
+            displayInorder(node.right);
         }
     }
+    
+    public void displayPreorder(Node node) {
+        if (node != null) {
+            System.out.println(" " + node.value);
+            displayPreorder(node.left);
+            displayPreorder(node.right);
+        }
+    }
+
+    public void displayPostorder(Node node) {
+        if (node != null) {
+            displayPostorder(node.left);
+            displayPostorder(node.right);
+            System.out.println(" " + node.value);
+        }
+    }
+
 }

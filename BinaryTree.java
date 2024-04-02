@@ -11,9 +11,18 @@ public class BinaryTree {
                 binaryTree.insert(scanner.nextInt());
             }
 
+        System.out.println("Inorder traversal for binary Tree:");
+        binaryTree.displayInorder(binaryTree.root);
+
+        System.out.println("Preorder traversal for binary Tree:");
+        binaryTree.displayPreorder(binaryTree.root);
+
+        System.out.println("Postorder traversal for binary Tree:");
+        binaryTree.displayPostorder(binaryTree.root);
+
+
         }
 
-        System.out.println("Binary Tree:");
-        binaryTree.display(binaryTree.root);
+        
     }
 }

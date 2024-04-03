@@ -20,6 +20,16 @@ public class BinaryTree {
         System.out.println("Postorder traversal for binary Tree:");
         binaryTree.displayPostorder(binaryTree.root);
 
+        System.out.println("Enter node 1:");
+        int n1 = scanner.nextInt();
+
+        System.out.println("Enter node 2:");
+        int n2 = scanner.nextInt();
+
+        DistanceBetweenTwoNodes distanceCalculator = new DistanceBetweenTwoNodes();
+        int distance = distanceCalculator.findDistance(binaryTree.root, n1, n2);
+
+        System.out.println("The distance between two nodes is " + distance);
 
         }
 

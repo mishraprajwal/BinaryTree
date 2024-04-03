@@ -31,6 +31,17 @@ public class BinaryTree {
 
         System.out.println("The distance between two nodes is " + distance);
 
+        BinaryTreeMirror mirror = new BinaryTreeMirror();
+        mirror.mirrorTree(binaryTree.root);
+
+        System.out.println("The binary tree after mirroring is: ");
+        binaryTree.displayInorder(binaryTree.root);
+
+        ValidBST validator = new ValidBST();
+        boolean isBST = validator.isValidBST(binaryTree.root);
+
+        System.out.println("Is the binary tree a valid BST? " + isBST);
+
         }
 
         

@@ -42,6 +42,18 @@ public class BinaryTree {
 
         System.out.println("Is the binary tree a valid BST? " + isBST);
 
+        System.out.println("Enter the key value for which you would like to find the predecessor:");
+        int key = scanner.nextInt();
+
+        FindPredecessor finder = new FindPredecessor();
+        Node predecessor = finder.findPredecessor(binaryTree.root, key);
+
+        System.out.println("The predecessor for" + key + " is  " + predecessor.value);
+
+
+
+
+
         }
 
         
